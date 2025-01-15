@@ -26,7 +26,7 @@ def variance(List, count):
 
 def save(t1, t2 ,t3):
     with open('ans.txt', 'w', encoding = 'utf-8')as f:
-        f.write(f'{t1}   {t2}    {t3}')
+        f.write(f'数据个数：{t1}   均值：{t2}    方差{t3}')
 
 
 List_data = Read_data()
