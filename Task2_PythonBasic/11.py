@@ -18,10 +18,10 @@ def Avg(List, count):
         sum += i
     return sum / count
 
-def variance(List, count):
+def variance(List, avg, count):
     sum = 1
     for i in List:
-        sum *= i
+        sum *= ((i - avg) ** 2)
     return sum / count
 
 def save(t1, t2 ,t3):
@@ -35,6 +35,6 @@ cnt = Count(List_data)
 
 avg = Avg(List_data, cnt)
 
-var = variance(List_data, cnt)
+var = variance(List_data, avg, cnt)
 
 save(cnt ,avg, var)
